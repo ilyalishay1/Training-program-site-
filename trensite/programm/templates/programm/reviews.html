@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'programm/css/style.css' %}">
+</head>
+<body>
+<header class="header">
+    <div class="navbar">
+        <p class="header-main-logo">AY</p>
+        <p class="header-logo">ARTEM YAKIMOVICH</p>
+        <ul class="header-links">
+            <li><a href="{% url 'advantages' %}">Преимущества</a></li>
+            <li><a href="{% url 'what_includes' %}">Что входит</a></li>
+            <li><a href="{% url 'how_looks' %}">Как выглядит</a></li>
+            <li><a href="{% url 'reviews' %}">Отзывы</a></li>
+            <li><a href="{% url 'cost' %}">Стоимость</a></li>
+        </ul>
+        <button type="button" class="header-button">ЗАКАЗАТЬ</button>
+        <a><img src="{% static 'programm/image/inst.jpeg' %}" class="header-inst-link"></a>
+        <a><img src="{% static 'programm/image/tiktok.png' %}" class="header-inst-link"></a>
+    </div>
+</header>
+<table>
+    <tr>
+        <td>
+            <h2 class="enter-h2">Результаты</h2>
+            <h1 class="adv-blue">ОТЗЫВЫ</h1>
+            <h3 class="adv">КЛИЕНТОВ</h3>
+            <p class="reviews-p">Все люди разные и требуют индивидуального подхода к тренировкам.<br>
+                Учитывая мой 10-ти летний стаж натуральных тренировок, я стараюсь<br>
+                разрабатывать максимально эффективные программы для людей.<br>
+                <br>
+                Вы не увидите липовых отзывов, где человек за месяц превращается из худого<br>
+                в химического халка. Вся моя работа построена на честности, совести и<br>
+                стремлении помочь людям в достижении их целей в телостроительстве.</p>
+            <button type="button" class="reviews-button">БОЛЬШЕ В INSTAGRAM</button>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+</table>
+<div class="offer-order-block">
+    <table>
+        <tr>
+            <td>
+                <div class="offer-order">
+                    <h2>01</h2>
+                    <h2 class="offer-order-h2">ОПЛАТИ<br>
+                    ПРОГРАММУ НА
+                    САЙТЕ
+                </h2>
+                </div>
+            </td>
+            <td>
+                <div class="offer-order">
+                    <h2>02</h2>
+                    <h2 class="offer-order-h2">ЗАПОЛНИ
+                    АНКЕТУ С
+                    ДАННЫМИ
+                </h2>
+                </div>
+            </td>
+            <td>
+                <div class="offer-order">
+                    <h2>03</h2>
+                    <h2 class="offer-order-h2">СОСТАВЛЮ ПРОГРАММУ В ТЕЧЕНИИ 7-МИ ДНЕЙ
+                    </h2>
+                </div>
+            </td>
+            <td>
+                <div class="offer-order">
+                    <h2>04</h2>
+                    <h2 class="offer-order-h2">ПЛАН ПРИДЕТ
+                    ТЕБЕ НА
+                    E-MAIL
+                    </h2>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+<h2 class="enter-h2">Ваша инфо</h2>
+<h1 class="adv-blue">КАКАЯ ИНФО</h1>
+<h3 class="adv">БУДЕТ НУЖНА?</h3>
+<div class="what-needs-block">
+    <table>
+        <tr>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/height.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Рост</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/weight.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Вес</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/age.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Возраст</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/calendar.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Стаж<br> тренировок</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/running.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Текущая<br>программа</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/knee-pad.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Противопоказания<br> по здоровью</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/fitness.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Акценты на<br> мышечную группу</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/email.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Email</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/goal.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Цель</br>тренировок</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/dumbbell.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Оборудование<br> зала</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/body-scan.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Фото текущей<br> формы</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/instagram-logo.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Ссылка на<br> Instagram</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+</body>
+</html>

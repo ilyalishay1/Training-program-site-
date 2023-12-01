@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'programm/css/style.css' %}">
+    <style>
+        body {
+              background-image: url({% static 'programm/image/order-background.jpeg' %});
+              background-repeat: no-repeat;
+              background-position: ß center;
+              background-attachment: fixed;
+              background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+<table class="order-table">
+    <tr>
+        <td>
+            <div class="order-section">
+                <div class="order-section-photo-border">
+                    <a><img src="{% static 'programm/image/order-section-img.jpg' %}" alt="" class="order-section-photo"></a>
+                </div>
+
+                <div class="order-section-info">
+                    <h3>Training Program from Artem Yakimovich</h3>
+                    <p>Order a training program</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="order-section-order-blank">
+                <div class="order-section-cost-div">
+                    <br>
+                    <p class="order-section-cost-p">Сумма</p>
+                    <p class="order-section-cost-h">1850 UAH</p>
+                </div>
+                <div class="0rder-table-form">
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="all-length-input-label">{{form.card_number.label_tag}}</div><br>
+                                {{form.card_number}}
+                                {% if form.errors %}
+                                <div class="error">{{form.errors}}</div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="left-length-input-label">{{form.expiration_date.label_tag}}</div><br>
+                                {{form.expiration_date}}
+                                {% if form.errors %}
+                                <div class="error">{{form.errors}}</div>
+                                {% endif %}
+                            </td>
+                            <td>
+                                <div class="right-length-input-label">{{form.cvv_2.label_tag}}</div><br>
+                                {{form.cvv_2}}
+                                {% if form.errors %}
+                                <div class="error">{{form.errors}}</div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="all-length-input-label">{{form.username.label_tag}}</div><br>
+                                {{form.username}}
+                                {% if form.errors %}
+                                <div class="error">{{form.errors}}</div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="left-length-input-label">{{form.phone_number.label_tag}}</div><br>
+                                {{form.phone_number}}
+                                {% if form.errors %}
+                                <div class="error">{{form.errors}}</div>
+                                {% endif %}
+                            </td>
+                            <td>
+                                <div class="right-length-input-label">{{form.email.label_tag}}</div><br>
+                                {{form.email}}
+                                {% if form.errors %}
+                                <div class="error">{{form.errors}}</div>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Оформить" class="order-submit-button">
+                </form>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

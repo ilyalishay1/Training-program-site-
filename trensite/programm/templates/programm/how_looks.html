@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Стоимость</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'programm/css/style.css' %}">
+</head>
+<body>
+<header class="header">
+    <div class="navbar">
+        <p class="header-main-logo">AY</p>
+        <p class="header-logo">ARTEM YAKIMOVICH</p>
+        <ul class="header-links">
+            <li><a href="{% url 'advantages' %}">Преимущества</a></li>
+            <li><a href="{% url 'what_includes' %}">Что входит</a></li>
+            <li><a href="{% url 'how_looks' %}">Как выглядит</a></li>
+            <li><a href="{% url 'reviews' %}">Отзывы</a></li>
+            <li><a href="{% url 'cost' %}">Стоимость</a></li>
+        </ul>
+        <button type="button" class="header-button">ЗАКАЗАТЬ</button>
+        <a><img src="{% static 'programm/image/inst.jpeg' %}" class="header-inst-link"></a>
+        <a><img src="{% static 'programm/image/tiktok.png' %}" class="header-inst-link"></a>
+    </div>
+</header>
+<table>
+    <tr>
+        <td>
+
+        </td>
+        <td>
+            <h2 class="how-looks-enter-h2">Как выглядит программа?</h2>
+            <h1 class="how-looks-blue">КАК ВЫГЛЯДИТ</h1>
+            <h3 class="how-looks">ПРОГРАММА?</h3>
+            <p class="how-looks-p">Программа разрабатывается в формате Excel.
+                Так как я использую много формул и даю
+                много информации в своих программах.
+                Над созданием такого обширного файла я работал
+                в сумме 2 года, постоянно улучшая его.
+                Ты<br> получишь самую подробную и эффективную<br> программу,
+                которых не получал раньше.</p>
+            <button type="button" class="how-looks-button">ЗАКАЗАТЬ ПРОГРАММУ</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

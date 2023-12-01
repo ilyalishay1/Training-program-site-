@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'programm/css/style.css' %}">
+</head>
+<body>
+<header class="header">
+    <div class="navbar">
+        <p class="header-main-logo">AY</p>
+        <p class="header-logo">ARTEM YAKIMOVICH</p>
+        <ul class="header-links">
+            <li><a href="{% url 'advantages' %}">Преимущества</a></li>
+            <li><a href="{% url 'what_includes' %}">Что входит</a></li>
+            <li><a href="{% url 'how_looks' %}">Как выглядит</a></li>
+            <li><a href="{% url 'reviews' %}">Отзывы</a></li>
+            <li><a href="{% url 'cost' %}">Стоимость</a></li>
+        </ul>
+        <button type="button" class="header-button">ЗАКАЗАТЬ</button>
+        <a><img src="{% static 'programm/image/inst.jpeg' %}" class="header-inst-link"></a>
+        <a><img src="{% static 'programm/image/tiktok.png' %}" class="header-inst-link"></a>
+    </div>
+</header>
+<table>
+    <tr>
+        <td>
+            <h2 class="enter-h2">Стоимость</h2>
+            <h1 class="adv-blue">СКОЛЬКО</h1>
+            <h3 class="adv">СТОИТ?</h3>
+            <div class="cost-section">
+                <br>
+                <h3 class="cost-section-h3">ИДВИДУАЛЬНАЯ ПРОГРАММА
+                    ТРЕНИРОВКИ ДЛЯ ТЕБЯ:
+                </h3>
+                <h2 class="cost-section-cost-h2">
+                        50 BYN
+                </h2>
+                <p class="cost-section-p">Индивидуальная программа тренировок на 4<br>
+                    месяца, по цене 4х персоналок от тренера в зале,<br>
+                    который тренирует, лишь бы быстрее прошел час?<br>
+                    Выбор очевиден ;)
+                </p>
+                <button type="button" class="cost-section-button">ЗАКАЗАТЬ ПРОГРАММУ</button>
+            </div>
+        </td>
+        <td>
+            <a><img src="{% static 'programm/image/cost-img.png' %}" class="cost-img"></a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Что входит в программу</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'programm/css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+    <div class="navbar">
+        <p class="header-main-logo">AY</p>
+        <p class="header-logo">ARTEM YAKIMOVICH</p>
+        <ul class="header-links">
+            <li><a href="{% url 'advantages' %}">Преимущества</a></li>
+            <li><a href="{% url 'what_includes' %}">Что входит</a></li>
+            <li><a href="{% url 'how_looks' %}">Как выглядит</a></li>
+            <li><a href="{% url 'reviews' %}">Отзывы</a></li>
+            <li><a href="{% url 'cost' %}">Стоимость</a></li>
+        </ul>
+        <button type="button" class="header-button">ЗАКАЗАТЬ</button>
+        <a><img src="{% static 'programm/image/inst.jpeg' %}" class="header-inst-link"></a>
+        <a><img src="{% static 'programm/image/tiktok.png' %}" class="header-inst-link"></a>
+    </div>
+</header>
+<h2 class="enter-h2">Подробная</h2>
+<h1 class="adv-blue">ЧТО ВХОДИТ</h1>
+<h3 class="adv">В ПРОГРАММУ?</h3>
+<br>
+<table>
+    <tr>
+        <td>
+            <h3 class="what-include-section-h3">ТРЕНИРОВКИ</h3>
+            <div class="what-include-section-list">
+                <ul>
+                    <li>Рекомендации по принципам тренировок, режиму дня</li>
+                    <li>Комментарии по выполнению к каждому упражнению</li>
+                    <li>В каждом упражнении указаны отказные и неотказные подходы</li>
+                    <li>Расписанные тренировочные сплиты с соблюдением периодизации</li>
+                    <li>Ссылки на видео с техникой выполнения всех упражнений</li>
+                    <li>Время отдыха между подходами указывается отдельно для каждого упражнения</li>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <h3 class="what-include-section-h3-2">ПИТАНИЕ</h3>
+            <div class="what-include-section-list-2">
+                <ul>
+                    <li>Рекомендации по принципам питания</li>
+                    <li>Распределение БЖУ для каждого приема в течение дня</li>
+                    <li>Автоматический счетчик БЖУ и калорий твоего рациона прямо в программе</li>
+                    <li>Расписанные БЖУ под твою цель тренировок</li>
+                    <li>Примеры из чего и как составлять рацион</li>
+                    <li>Информация и правила приема эффективных позиций спортивного питания</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+<section class="what-include-blue-section">
+    <table>
+        <tr>
+            <td>
+                <h1 class="what-include-blue-section-h1">ВАЖНО!</h1>
+                <p class="what-include-blue-section-p">Программа тренировок составляется только для
+                    тренажерного зала или же при наличии спортивного
+                    инвентаря дома. Минимально необходимый инвентарь
+                    - регулируемая скамья и разборные гантели (минимум по 25
+                    кг каждая). План тренировок только для тренировок со
+                    своим весом не составляю.</p>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>

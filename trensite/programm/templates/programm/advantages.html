@@ -1,0 +1,90 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Преимущества программы</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'programm/css/style.css' %}">
+</head>
+<body>
+<header class="header">
+    <div class="navbar">
+        <p class="header-main-logo">AY</p>
+        <p class="header-logo">ARTEM YAKIMOVICH</p>
+        <ul class="header-links">
+            <li><a href="{% url 'advantages' %}">Преимущества</a></li>
+            <li><a href="{% url 'what_includes' %}">Что входит</a></li>
+            <li><a href="{% url 'how_looks' %}">Как выглядит</a></li>
+            <li><a href="{% url 'reviews' %}">Отзывы</a></li>
+            <li><a href="{% url 'cost' %}">Стоимость</a></li>
+        </ul>
+        <button type="button" class="header-button">ЗАКАЗАТЬ</button>
+        <a><img src="{% static 'programm/image/inst.jpeg' %}" class="header-inst-link"></a>
+        <a><img src="{% static 'programm/image/tiktok.png' %}" class="header-inst-link"></a>
+    </div>
+</header>
+<h2 class="enter-h2">Почему я?</h2>
+<h1 class="adv-blue">ПРЕИМУЩЕСТВА</h1>
+<h3 class="adv">ПРОГРАММЫ</h3>
+<table class="avd-section">
+    <tr>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon1.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">ИНДИВИДУАЛЬНАЯ</h1>
+                <p class="adv-section-p">Программа составляется для каждого
+                    индивидуально, исходя<br> из данных человека,
+                    которые он укажет в анкете на сайте. Это не
+                    стандартный план для всех<br> из первой выдачи в Google.</p>
+            </div>
+        </td>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon2.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">ПОДРОБНАЯ</h1>
+                <p class="adv-section-p">Ты получаешь не просто список упражнений, а
+                    очень подробный и обширный файл, где
+                    расписан каждый нюанс тренировок<br> и
+                    питания.</p>
+            </div>
+        </td>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon3.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">ПЛАН НА 4 МЕСЯЦА</h1>
+                <p class="adv-section-p">Упражнения расписаны на целый месяц (1
+                    цикл). Этот цикл можно повторять. Так как в
+                    программе учитывается периодизация.<br> Советую проходить 4 цикла (4 месяца) и
+                    менять программу,<br> чтобы организм не привыкал.</p>
+            </div>
+        </td>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon4.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">НАУЧНО ПОДТВЕРЖДЕНО</h1>
+                <p class="adv-section-p">Программа строится исходя из моего 10-
+                    летнего стажа натуральных тренировок. А
+                    также исходя современных научных<br>
+                    исследований в сфере<br> фитнеса и
+                    телостроительства.</p>
+            </div>
+        </td>
+    </tr>
+</table>
+<section class="second-adv-section">
+    <table  class="second-adv-table">
+        <tr>
+            <td>
+                <h2 class="enter-h2-2">Начни прямо сейчас</h2>
+                <h1 class="adv-blue">НАЧИНАЙ МЕНЯТЬ</h1>
+                <h3 class="adv"> СВОЕ ТЕЛО ГРАМОТНО<br> И ЭФФЕКТИВНО</h3>
+                <button type="button" class="adv-button">НАЧАТЬ</button>
+            </td>
+            <td>
+                <p><img src="{% static 'programm/image/sectionadv.jpeg' %}" class="adv-section-img"></p>
+            </td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>

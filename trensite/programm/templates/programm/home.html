@@ -1,0 +1,439 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Программы тренировок от Artem Yakimovich</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'programm/css/style.css' %}">
+    <style>
+        .home {
+              background-image: url({% static 'programm/image/main-background.jpeg' %});
+              background-repeat: no-repeat;
+              background-position: ß left;
+              background-attachment: fixed;
+              background-size: 100%;
+        }
+
+        .cost-background {
+            margin-top: 150px;
+            background-image: url({% static 'programm/image/cost-background.png' %});
+            background-repeat: no-repeat;
+            background-position: ß left;
+            background-attachment: fixed;
+            background-size: 120%;
+        }
+
+        .adv-background {
+            margin-top: 100px;
+            background-image: url({% static 'programm/image/adv-cover.jpg' %});
+            background-repeat: no-repeat;
+            background-position: ß left;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="home">
+    <header class="header">
+        <div class="navbar">
+            <p class="header-main-logo">AY</p>
+            <p class="header-logo">ARTEM YAKIMOVICH</p>
+            <ul class="header-links">
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#what-include">Что входит</a></li>
+                <li><a href="#how-looks">Как выглядит</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#cost">Стоимость</a></li>
+            </ul>
+            <button type="button" onclick="document.location='#cost'" class="header-button">ЗАКАЗАТЬ</button>
+            <a href="https://www.instagram.com/_teeemgo_/"><img src="{% static 'programm/image/inst.jpeg' %}" class="header-inst-link"></a>
+            <a href="https://www.tiktok.com/@teeemgo23"><img src="{% static 'programm/image/tiktok.png' %}" class="header-inst-link"></a>
+        </div>
+    </header>
+    <h1 class="home-h1">ТВОЯ<br>ПРОГРАММА<br>ТРЕНИРОВОК</h1>
+    <p class="home-p">План тренировок и питания, составленные по<br>
+        научным исследованиям
+    </p>
+    <button type="button" onclick="document.location='#advantages'" class="home-button">УЗНАТЬ ПОДРОБНЕЕ</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</div>
+<h2 class="enter-h2" id="advantages">Почему я?</h2>
+<h1 class="adv-blue">ПРЕИМУЩЕСТВА</h1>
+<h3 class="adv">ПРОГРАММЫ</h3>
+<table class="avd-section">
+    <tr>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon1.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">ИНДИВИДУАЛЬНАЯ</h1>
+                <p class="adv-section-p">Программа составляется для каждого
+                    индивидуально, исходя<br> из данных человека,
+                    которые он укажет в анкете на сайте. Это не
+                    стандартный план для всех<br> из первой выдачи в Google.</p>
+            </div>
+        </td>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon2.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">ПОДРОБНАЯ</h1>
+                <p class="adv-section-p">Ты получаешь не просто список упражнений, а
+                    очень подробный и обширный файл, где
+                    расписан каждый нюанс тренировок<br> и
+                    питания.</p>
+            </div>
+        </td>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon3.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">ПЛАН НА 4 МЕСЯЦА</h1>
+                <p class="adv-section-p">Упражнения расписаны на целый месяц (1
+                    цикл). Этот цикл можно повторять. Так как в
+                    программе учитывается периодизация.<br> Советую проходить 4 цикла (4 месяца) и
+                    менять программу,<br> чтобы организм не привыкал.</p>
+            </div>
+        </td>
+        <td>
+            <div class="adv-blocks">
+                <p><img src="{% static 'programm/image/benefits-icon4.svg' %}" class="adv-img"></p>
+                <h1 class="adv-section-h">НАУЧНО ПОДТВЕРЖДЕНО</h1>
+                <p class="adv-section-p">Программа строится исходя из моего 10-
+                    летнего стажа натуральных тренировок. А
+                    также исходя современных научных<br>
+                    исследований в сфере<br> фитнеса и
+                    телостроительства.</p>
+            </div>
+        </td>
+    </tr>
+</table>
+<div class="adv-background">
+    <br>
+<section class="second-adv-section">
+    <table class="second-adv-table">
+        <tr>
+            <td>
+                <h2 class="enter-h2-2">Начни прямо сейчас</h2>
+                <h1 class="adv-blue">НАЧИНАЙ МЕНЯТЬ</h1>
+                <h3 class="adv"> СВОЕ ТЕЛО ГРАМОТНО<br> И ЭФФЕКТИВНО</h3>
+                <button type="button" onclick="document.location='#cost'" class="adv-button">НАЧАТЬ</button>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<h2 class="enter-h2" id="what-include">Подробная</h2>
+<h1 class="adv-blue">ЧТО ВХОДИТ</h1>
+<h3 class="adv">В ПРОГРАММУ?</h3>
+<br>
+<table>
+    <tr>
+        <td>
+            <h3 class="what-include-section-h3">ТРЕНИРОВКИ</h3>
+            <div class="what-include-section-list">
+                <ul>
+                    <li>Рекомендации по принципам тренировок, режиму дня</li>
+                    <li>Комментарии по выполнению к каждому упражнению</li>
+                    <li>В каждом упражнении указаны отказные и неотказные подходы</li>
+                    <li>Расписанные тренировочные сплиты с соблюдением периодизации</li>
+                    <li>Ссылки на видео с техникой выполнения всех упражнений</li>
+                    <li>Время отдыха между подходами указывается отдельно для каждого упражнения</li>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <h3 class="what-include-section-h3-2">ПИТАНИЕ</h3>
+            <div class="what-include-section-list-2">
+                <ul>
+                    <li>Рекомендации по принципам питания</li>
+                    <li>Распределение БЖУ для каждого приема в течение дня</li>
+                    <li>Автоматический счетчик БЖУ и калорий твоего рациона прямо в программе</li>
+                    <li>Расписанные БЖУ под твою цель тренировок</li>
+                    <li>Примеры из чего и как составлять рацион</li>
+                    <li>Информация и правила приема эффективных позиций спортивного питания</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+<section class="what-include-blue-section">
+    <table>
+        <tr>
+            <td>
+                <h1 class="what-include-blue-section-h1">ВАЖНО!</h1>
+                <p class="what-include-blue-section-p">Программа тренировок составляется только для
+                    тренажерного зала или же при наличии спортивного
+                    инвентаря дома. Минимально необходимый инвентарь
+                    - регулируемая скамья и разборные гантели (минимум по 25
+                    кг каждая). План тренировок только для тренировок со
+                    своим весом не составляю.</p>
+            </td>
+            <td>
+                <a><img src="{% static 'programm/image/barbell-5.png' %}" class="what-include-blue-section-img"></a>
+            </td>
+        </tr>
+    </table>
+</section>
+<br>
+<table id="how-looks">
+    <tr>
+        <td>
+            <div class="slider middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+
+                    <div class="slide s1"><img src="{% static 'programm/image/how-looks-slide1.jpeg' %}" alt=""></div>
+                    <div class="slide"><img src="{% static 'programm/image/how-looks-slide2.jpeg' %}" alt=""></div>
+                    <div class="slide"><img src="{% static 'programm/image/how-looks-slide3.jpeg' %}" alt=""></div>
+                    <div class="slide"><img src="{% static 'programm/image/how-looks-slide4.jpeg' %}" alt=""></div>
+                </div>
+
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                </div>
+            </div>
+        </td>
+        <td>
+            <h2 class="how-looks-enter-h2">Как выглядит программа?</h2>
+            <h1 class="how-looks-blue">КАК ВЫГЛЯДИТ</h1>
+            <h3 class="how-looks">ПРОГРАММА?</h3>
+            <p class="how-looks-p">Программа разрабатывается в формате Excel.
+                Так как я использую много формул и даю
+                много информации в своих программах.
+                Над созданием такого обширного файла я работал
+                в сумме 2 года, постоянно улучшая его.
+                Ты получишь самую подробную и эффективную программу,
+                которых не получал раньше.</p>
+            <button type="button" onclick="document.location='#cost'" class="how-looks-button">ЗАКАЗАТЬ ПРОГРАММУ</button>
+        </td>
+    </tr>
+</table>
+<br>
+<table id="reviews">
+    <tr>
+        <td>
+            <h2 class="enter-h2">Результаты</h2>
+            <h1 class="adv-blue">ОТЗЫВЫ</h1>
+            <h3 class="adv">КЛИЕНТОВ</h3>
+            <p class="reviews-p">Все люди разные и требуют индивидуального подхода<br>
+                к тренировкам. Учитывая мой 10-ти летний стаж натуральных<br>
+                тренировок, я стараюсь разрабатывать максимально<br>
+                эффективные программы для людей. Вы не увидите липовых<br>
+                отзывов, где человек за месяц превращается из худого<br>
+                в химического халка. Вся моя работа построена на честности,<br>
+                совести и стремлении помочь людям в достижении их<br>
+                целей в телостроительстве.</p>
+            <button type="button" onclick="document.location='https://www.instagram.com/_teeemgo_/'" class="reviews-button">БОЛЬШЕ В INSTAGRAM</button>
+        </td>
+        <td>
+            <div class="slider-reviews middle-reviews">
+                <div class="slides">
+                    <input type="radio" name="r" id="r5" checked>
+                    <input type="radio" name="r" id="r6">
+                    <input type="radio" name="r" id="r7">
+                    <input type="radio" name="r" id="r8">
+
+                    <div class="slide s1"><img src="{% static 'programm/image/reviews-slide1.jpeg' %}" alt=""></div>
+                    <div class="slide"><img src="{% static 'programm/image/reviews-slide2.jpeg' %}" alt=""></div>
+                    <div class="slide"><img src="{% static 'programm/image/how-looks-slide3.jpeg' %}" alt=""></div>
+                    <div class="slide"><img src="{% static 'programm/image/how-looks-slide4.jpeg' %}" alt=""></div>
+                </div>
+
+                <div class="navigation">
+                    <label for="r5" class="bar"></label>
+                    <label for="r6" class="bar"></label>
+                    <label for="r7" class="bar"></label>
+                    <label for="r8" class="bar"></label>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<div class="offer-order-block">
+    <table>
+        <tr>
+            <td>
+                <div class="offer-order">
+                    <h2>01</h2>
+                    <h2 class="offer-order-h2">ОПЛАТИ<br>
+                    ПРОГРАММУ НА
+                    САЙТЕ
+                </h2>
+                </div>
+            </td>
+            <td>
+                <div class="offer-order">
+                    <h2>02</h2>
+                    <h2 class="offer-order-h2">ЗАПОЛНИ
+                    АНКЕТУ С
+                    ДАННЫМИ
+                </h2>
+                </div>
+            </td>
+            <td>
+                <div class="offer-order">
+                    <h2>03</h2>
+                    <h2 class="offer-order-h2">СОСТАВЛЮ ПРОГРАММУ В ТЕЧЕНИИ 7-МИ ДНЕЙ
+                    </h2>
+                </div>
+            </td>
+            <td>
+                <div class="offer-order">
+                    <h2>04</h2>
+                    <h2 class="offer-order-h2">ПЛАН ПРИДЕТ
+                    ТЕБЕ НА
+                    E-MAIL
+                    </h2>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+<h2 class="enter-h2">Ваша инфо</h2>
+<h1 class="adv-blue">КАКАЯ ИНФО</h1>
+<h3 class="adv">БУДЕТ НУЖНА?</h3>
+<div class="what-needs-block">
+    <table>
+        <tr>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/height.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Рост</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/weight.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Вес</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/age.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Возраст</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/calendar.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Стаж<br> тренировок</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/running.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Текущая<br>программа</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/knee-pad.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Противопоказания<br> по здоровью</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/fitness.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Акценты на<br> мышечную группу</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/email.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Email</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/goal.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Цель</br>тренировок</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/dumbbell.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Оборудование<br> зала</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/body-scan.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Фото текущей<br> формы</p>
+                </div>
+            </td>
+            <td>
+                <div class="what-needs">
+                    <p><img src="{% static 'programm/image/instagram-logo.svg' %}" class="what-needs-img"></p>
+                    <p class="what-needs-p">Ссылка на<br> Instagram</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<br>
+<div class="cost-background">
+<table>
+    <tr>
+        <td>
+            <h2 class="enter-h2" id="cost">Стоимость</h2>
+            <h1 class="adv-blue">СКОЛЬКО</h1>
+            <h3 class="adv">СТОИТ?</h3>
+            <div class="cost-section">
+                <br>
+                <h3 class="cost-section-h3">ИДВИДУАЛЬНАЯ ПРОГРАММА
+                    ТРЕНИРОВКИ ДЛЯ ТЕБЯ:
+                </h3>
+                <h2 class="cost-section-cost-h2">
+                        50 BYN
+                </h2>
+                <p class="cost-section-p">Индивидуальная программа тренировок на 4<br>
+                    месяца, по цене 4х персоналок от тренера в зале,<br>
+                    который тренирует, лишь бы быстрее прошел час?<br>
+                    Выбор очевиден ;)
+                </p>
+                <button type="button" onclick="document.location='{% url 'order' %}'" class="cost-section-button">ЗАКАЗАТЬ ПРОГРАММУ</button>
+            </div>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+</table>
+</div>
+<footer class="footer">
+    <p class="footer-main-logo">AY</p>
+            <p class="footer-logo">ARTEM YAKIMOVICH</p>
+            <ul class="footer-links">
+                <li><a href="{% url 'privacy-policy' %}">Политика конфиденциальности</a></li>
+                <li><a href="{% url 'offer' %}">Оферта</a></li>
+            </ul>
+            <a href="https://www.instagram.com/_teeemgo_/"><img src="{% static 'programm/image/inst.jpeg' %}" class="footer-inst-link"></a>
+            <a href="https://www.tiktok.com/@teeemgo23"><img src="{% static 'programm/image/tiktok.png' %}" class="footer-inst-link"></a>
+</footer>
+</body>
+</html>
