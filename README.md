@@ -1,2 +1,2 @@
 # Training-program-site-
-Not adaptive design. Only for computers
+Not adaptive design.  Design only for computers.
